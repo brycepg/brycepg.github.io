@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://brycepg.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Jul 2023 15:14:48 -0600</lastBuildDate><atom:link href="https://brycepg.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Lua Language Server for Neovim</title>
+      <link>https://brycepg.github.io/posts/install-lua-language-server-for-neovim/</link>
+      <pubDate>Tue, 04 Jul 2023 15:14:48 -0600</pubDate>
+      
+      <guid>https://brycepg.github.io/posts/install-lua-language-server-for-neovim/</guid>
+      <description>Install lua language server on windows for Neovim Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time
+irm get.scoop.sh | iex
+scoop bucket add extras
+scoop install lua-language-server[</description>
+      <content>&lt;h1 id=&#34;install-lua-language-server-on-windows-for-neovim&#34;&gt;Install lua language server on windows for Neovim&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;Set-ExecutionPolicy RemoteSigned -Scope CurrentUser&lt;/code&gt; # Optional: Needed to run a remote script the first time&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;irm get.scoop.sh | iex&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;scoop bucket add extras&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;scoop install lua-language-server&lt;/code&gt;[&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Disable Ligatures in Powershell 7</title>
+      <link>https://brycepg.github.io/posts/disable-ligatures-in-powershell-7/</link>
+      <pubDate>Tue, 04 Jul 2023 15:11:29 -0600</pubDate>
+      
+      <guid>https://brycepg.github.io/posts/disable-ligatures-in-powershell-7/</guid>
+      <description>Adding a font with extended icons automatically enables ligatures for powershell. This example shows CaskaydiaCove Nerd Font installed.
+Here&amp;rsquo;s how to do it for powershell 7.x (pwsh)
+How to disable Ligatures for Windows 11 Powershell 7 $settings = (Get-Item &amp;quot;C:\users\$env:UserName\AppData\Local\Packages\Microsoft.WindowsTerminal_*\LocalState\settings.json&amp;quot;) notepad $settings.DirectoryName search for &amp;ldquo;font&amp;rdquo; add the below &amp;ldquo;features&amp;rdquo; section into the json in your file:
+&amp;#34;font&amp;#34;:{&amp;#34;face&amp;#34;: &amp;#34;CaskaydiaCove Nerd Font&amp;#34;,&amp;#34;features&amp;#34;: {&amp;#34;liga&amp;#34;: 0,&amp;#34;calt&amp;#34;: 0}}, Start a new shell to check</description>
+      <content>&lt;p&gt;Adding a font with extended icons automatically enables ligatures for powershell. This example shows CaskaydiaCove Nerd Font installed.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how to do it for powershell 7.x (&lt;code&gt;pwsh&lt;/code&gt;)&lt;/p&gt;
+&lt;h1 id=&#34;how-to-disable-ligatures-for-windows-11-powershell-7&#34;&gt;How to disable Ligatures for Windows 11 Powershell 7&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;$settings = (Get-Item &amp;quot;C:\users\$env:UserName\AppData\Local\Packages\Microsoft.WindowsTerminal_*\LocalState\settings.json&amp;quot;)&lt;/code&gt;
+&lt;code&gt;notepad $settings.DirectoryName&lt;/code&gt;
+search for &amp;ldquo;font&amp;rdquo;
+add the below &amp;ldquo;features&amp;rdquo; section into the json in your file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;         &amp;#34;font&amp;#34;:
+         {
+             &amp;#34;face&amp;#34;: &amp;#34;CaskaydiaCove Nerd Font&amp;#34;,
+             &amp;#34;features&amp;#34;: {
+                 &amp;#34;liga&amp;#34;: 0,
+                 &amp;#34;calt&amp;#34;: 0
+             }
+         },
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Start a new shell to check&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Add Any Application to Windows Startup</title>
+      <link>https://brycepg.github.io/posts/add-any-application-to-windows-startup/</link>
+      <pubDate>Tue, 04 Jul 2023 14:58:38 -0600</pubDate>
+      
+      <guid>https://brycepg.github.io/posts/add-any-application-to-windows-startup/</guid>
+      <description>Open any application on Windows 11 Startup Use the Windows key+R keyboard combination to open the Run dialog box. Enter shell:startup to open the Windows 11 startup folder
+Right-click in the folder &amp;gt; select New &amp;gt; Shortcut &amp;gt; Browse &amp;gt; New &amp;gt; Finish to add a new startup program</description>
+      <content>&lt;h1 id=&#34;open-any-application-on-windows-11-startup&#34;&gt;Open any application on Windows 11 Startup&lt;/h1&gt;
+&lt;p&gt;Use the &lt;strong&gt;Windows key+R&lt;/strong&gt; keyboard combination to open the Run dialog box. Enter &lt;strong&gt;shell:startup&lt;/strong&gt; to open the Windows 11 startup folder&lt;/p&gt;
+&lt;p&gt;Right-click in the folder &amp;gt; select &lt;strong&gt;New&lt;/strong&gt; &amp;gt; &lt;strong&gt;Shortcut&lt;/strong&gt; &amp;gt; &lt;strong&gt;Browse&lt;/strong&gt; &amp;gt; &lt;strong&gt;New&lt;/strong&gt; &amp;gt; &lt;strong&gt;Finish&lt;/strong&gt; to add a new startup program&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

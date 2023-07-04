@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Disable Ligatures in Powershell 7 :: My New Hugo Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Adding a font with extended icons automatically enables ligatures for powershell. This example shows CaskaydiaCove Nerd Font installed.
+Here&amp;rsquo;s how to do it for powershell 7.x (pwsh)
+How to disable Ligatures for Windows 11 Powershell 7 $settings = (Get-Item &amp;quot;C:\users\$env:UserName\AppData\Local\Packages\Microsoft.WindowsTerminal_*\LocalState\settings.json&amp;quot;) notepad $settings.DirectoryName search for &amp;ldquo;font&amp;rdquo; add the below &amp;ldquo;features&amp;rdquo; section into the json in your file:
+&amp;#34;font&amp;#34;:{&amp;#34;face&amp;#34;: &amp;#34;CaskaydiaCove Nerd Font&amp;#34;,&amp;#34;features&amp;#34;: {&amp;#34;liga&amp;#34;: 0,&amp;#34;calt&amp;#34;: 0}}, Start a new shell to check" />
+<meta name="keywords" content=", " />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="https://brycepg.github.io/posts/disable-ligatures-in-powershell-7/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://brycepg.github.io/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="https://brycepg.github.io/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="https://brycepg.github.io/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Disable Ligatures in Powershell 7">
+<meta property="og:description" content="Adding a font with extended icons automatically enables ligatures for powershell. This example shows CaskaydiaCove Nerd Font installed.
+Here&amp;rsquo;s how to do it for powershell 7.x (pwsh)
+How to disable Ligatures for Windows 11 Powershell 7 $settings = (Get-Item &amp;quot;C:\users\$env:UserName\AppData\Local\Packages\Microsoft.WindowsTerminal_*\LocalState\settings.json&amp;quot;) notepad $settings.DirectoryName search for &amp;ldquo;font&amp;rdquo; add the below &amp;ldquo;features&amp;rdquo; section into the json in your file:
+&amp;#34;font&amp;#34;:{&amp;#34;face&amp;#34;: &amp;#34;CaskaydiaCove Nerd Font&amp;#34;,&amp;#34;features&amp;#34;: {&amp;#34;liga&amp;#34;: 0,&amp;#34;calt&amp;#34;: 0}}, Start a new shell to check" />
+<meta property="og:url" content="https://brycepg.github.io/posts/disable-ligatures-in-powershell-7/" />
+<meta property="og:site_name" content="My New Hugo Site" />
+
+  
+  
+  <meta property="og:image" content="https://brycepg.github.io/">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2023-07-04 15:11:29 -0600 MDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="https://brycepg.github.io/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://brycepg.github.io/posts/disable-ligatures-in-powershell-7/">Disable Ligatures in Powershell 7</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2023-07-04</time><span class="post-author">Bryce Guinta</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="https://brycepg.github.io/tags/"></a>&nbsp;
+      
+      #<a href="https://brycepg.github.io/tags/"></a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p>Adding a font with extended icons automatically enables ligatures for powershell. This example shows CaskaydiaCove Nerd Font installed.</p>
+<p>Here&rsquo;s how to do it for powershell 7.x (<code>pwsh</code>)</p>
+<h1 id="how-to-disable-ligatures-for-windows-11-powershell-7">How to disable Ligatures for Windows 11 Powershell 7<a href="#how-to-disable-ligatures-for-windows-11-powershell-7" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p><code>$settings = (Get-Item &quot;C:\users\$env:UserName\AppData\Local\Packages\Microsoft.WindowsTerminal_*\LocalState\settings.json&quot;)</code>
+<code>notepad $settings.DirectoryName</code>
+search for &ldquo;font&rdquo;
+add the below &ldquo;features&rdquo; section into the json in your file:</p>
+<pre tabindex="0"><code>         &#34;font&#34;:
+         {
+             &#34;face&#34;: &#34;CaskaydiaCove Nerd Font&#34;,
+             &#34;features&#34;: {
+                 &#34;liga&#34;: 0,
+                 &#34;calt&#34;: 0
+             }
+         },
+</code></pre><p>Start a new shell to check</p>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

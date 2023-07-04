@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows-11 on My New Hugo Site</title>
+    <link>https://brycepg.github.io/tags/windows-11/</link>
+    <description>Recent content in windows-11 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Jul 2023 14:58:38 -0600</lastBuildDate><atom:link href="https://brycepg.github.io/tags/windows-11/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add Any Application to Windows Startup</title>
+      <link>https://brycepg.github.io/posts/add-any-application-to-windows-startup/</link>
+      <pubDate>Tue, 04 Jul 2023 14:58:38 -0600</pubDate>
+      
+      <guid>https://brycepg.github.io/posts/add-any-application-to-windows-startup/</guid>
+      <description>Open any application on Windows 11 Startup Use the Windows key+R keyboard combination to open the Run dialog box. Enter shell:startup to open the Windows 11 startup folder
+Right-click in the folder &amp;gt; select New &amp;gt; Shortcut &amp;gt; Browse &amp;gt; New &amp;gt; Finish to add a new startup program</description>
+      <content>&lt;h1 id=&#34;open-any-application-on-windows-11-startup&#34;&gt;Open any application on Windows 11 Startup&lt;/h1&gt;
+&lt;p&gt;Use the &lt;strong&gt;Windows key+R&lt;/strong&gt; keyboard combination to open the Run dialog box. Enter &lt;strong&gt;shell:startup&lt;/strong&gt; to open the Windows 11 startup folder&lt;/p&gt;
+&lt;p&gt;Right-click in the folder &amp;gt; select &lt;strong&gt;New&lt;/strong&gt; &amp;gt; &lt;strong&gt;Shortcut&lt;/strong&gt; &amp;gt; &lt;strong&gt;Browse&lt;/strong&gt; &amp;gt; &lt;strong&gt;New&lt;/strong&gt; &amp;gt; &lt;strong&gt;Finish&lt;/strong&gt; to add a new startup program&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

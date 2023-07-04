@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Posts :: My New Hugo Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="https://brycepg.github.io/posts/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://brycepg.github.io/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="https://brycepg.github.io/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="https://brycepg.github.io/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Posts">
+<meta property="og:description" content="" />
+<meta property="og:url" content="https://brycepg.github.io/posts/" />
+<meta property="og:site_name" content="My New Hugo Site" />
+
+  
+    <meta property="og:image" content="img/favicon/%!s().png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="https://brycepg.github.io/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+  
+  <div class="posts">
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="https://brycepg.github.io/posts/install-lua-language-server-for-neovim/">Install Lua Language Server for Neovim</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2023-07-04</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://brycepg.github.io/tags/"></a>&nbsp;
+            
+            #<a href="https://brycepg.github.io/tags/"></a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            Install lua language server on windows for Neovim Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time
+irm get.scoop.sh | iex
+scoop bucket add extras
+scoop install lua-language-server[
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button" href="/posts/install-lua-language-server-for-neovim/"> →</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="https://brycepg.github.io/posts/disable-ligatures-in-powershell-7/">Disable Ligatures in Powershell 7</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2023-07-04</time><span class="post-author">Bryce Guinta</span></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://brycepg.github.io/tags/"></a>&nbsp;
+            
+            #<a href="https://brycepg.github.io/tags/"></a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            Adding a font with extended icons automatically enables ligatures for powershell. This example shows CaskaydiaCove Nerd Font installed.
+Here&rsquo;s how to do it for powershell 7.x (pwsh)
+How to disable Ligatures for Windows 11 Powershell 7 $settings = (Get-Item &quot;C:\users\$env:UserName\AppData\Local\Packages\Microsoft.WindowsTerminal_*\LocalState\settings.json&quot;) notepad $settings.DirectoryName search for &ldquo;font&rdquo; add the below &ldquo;features&rdquo; section into the json in your file:
+&#34;font&#34;:{&#34;face&#34;: &#34;CaskaydiaCove Nerd Font&#34;,&#34;features&#34;: {&#34;liga&#34;: 0,&#34;calt&#34;: 0}}, Start a new shell to check
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button" href="/posts/disable-ligatures-in-powershell-7/"> →</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="https://brycepg.github.io/posts/add-any-application-to-windows-startup/">Add Any Application to Windows Startup</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2023-07-04</time><span class="post-author">Bryce Guinta</span></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://brycepg.github.io/tags/windows-11/">windows-11</a>&nbsp;
+            
+            #<a href="https://brycepg.github.io/tags/"></a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <h1 id="open-any-application-on-windows-11-startup">Open any application on Windows 11 Startup</h1>
+<p>Use the <strong>Windows key+R</strong> keyboard combination to open the Run dialog box. Enter <strong>shell:startup</strong> to open the Windows 11 startup folder</p>
+<p>Right-click in the folder &gt; select <strong>New</strong> &gt; <strong>Shortcut</strong> &gt; <strong>Browse</strong> &gt; <strong>New</strong> &gt; <strong>Finish</strong> to add a new startup program</p>
+
+          
+        </div>
+
+        
+      </article>
+    
+
+    <div class="pagination">
+  <div class="pagination__buttons">
+    
+    
+  </div>
+</div>
+
+  </div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
